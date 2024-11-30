@@ -1,0 +1,204 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c7667001-7607-4fec-ab37-2bf5be91a533" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Zone</ID>
+  <Name>Dim Zone</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2202" scrolltop="-4789" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7161" y="12524" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Zone" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2946" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000820b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Zone" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2202</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4789</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="61dc543b-b04f-4001-b7d9-ad8318716ad8">
+    <DataSourceViewID>Datamart International</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="41f010f9-c3d9-4c7f-a2cf-03b12bc26733">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="9caccbbc-716f-4d8d-a17e-2a06a67cf3be">
+      <ID>Id Bureau</ID>
+      <Name>Id Bureau</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fc0d71c5-d0ee-4ab3-83b3-6dd4bc2f3acd">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="925eb599-16d0-400d-928e-8c9a24a9e60d">
+            <TableID>dbo_Dim_Zone</TableID>
+            <ColumnID>id_bureau</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="eabc4902-2e6f-44e9-8d75-d57c34b2ff1d">
+          <AttributeID>Nom Wilaya</AttributeID>
+          <Name>Nom Wilaya</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c250f6c3-1f80-40d9-a16a-dad9f2dee42a">
+          <AttributeID>Id Commune</AttributeID>
+          <Name>Id Commune</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="23ba8bee-f045-4312-92bd-9f054ef858d2">
+          <AttributeID>Nom Bureau</AttributeID>
+          <Name>Nom Bureau</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="70ce2d37-0066-4deb-8ce0-d862b70644c3">
+          <AttributeID>Id Wilaya</AttributeID>
+          <Name>Id Wilaya</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c3e78206-89e4-4199-8a09-5dcdd555ccaa">
+      <ID>Nom Wilaya</ID>
+      <Name>Nom Wilaya</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d8f57f4c-6cfc-46f5-b617-3d0ca5dbcfda">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="890e9586-67f1-4153-9f5f-ecbfe94145ea">
+            <TableID>dbo_Dim_Zone</TableID>
+            <ColumnID>nom_wilaya</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bac74d88-9e76-4fee-9957-7fdfa016207c">
+      <ID>Id Commune</ID>
+      <Name>Id Commune</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="918535aa-97ce-4764-9e3a-709b381dc2b4">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5378830a-5a72-4ca6-8ec8-d1a7d9d8c2b6">
+            <TableID>dbo_Dim_Zone</TableID>
+            <ColumnID>id_commune</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8071ca1f-1249-4475-9c33-b7abe4d8df75">
+      <ID>Nom Bureau</ID>
+      <Name>Nom Bureau</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="eeadfe68-3146-4a9d-9c81-425f0e9b4b48">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7e3e8523-6ccd-4685-9050-909bd38757f6">
+            <TableID>dbo_Dim_Zone</TableID>
+            <ColumnID>nom_bureau</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="75a0c55b-7738-4901-8eee-90ee246878d3">
+      <ID>Id Wilaya</ID>
+      <Name>Id Wilaya</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="45800e82-a092-4221-b889-74573fa3e004">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9ade80fd-8413-4cf0-b505-ca6b994255e4">
+            <TableID>dbo_Dim_Zone</TableID>
+            <ColumnID>id_wilaya</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="2d390a9f-67ba-4dda-a6d6-329df2b50b3d">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="e05e28e9-ba3f-4831-a731-617c54bf22de">
+          <ID>Nom Wilaya</ID>
+          <Name>Nom Wilaya</Name>
+          <SourceAttributeID>Nom Wilaya</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="69d49348-3933-4362-aaed-8c14597202b5">
+          <ID>Id Commune</ID>
+          <Name>Id Commune</Name>
+          <SourceAttributeID>Id Commune</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="3a43d01b-48c2-4cee-892b-f7f272ca94fe">
+          <ID>Nom Bureau</ID>
+          <Name>Nom Bureau</Name>
+          <SourceAttributeID>Nom Bureau</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

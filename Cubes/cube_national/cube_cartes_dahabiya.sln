@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34902.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "cube_cartes_dahabiya", "cube_cartes_dahabiya\cube_cartes_dahabiya.dwproj", "{633A8F88-24A8-4144-89F7-8AD0EFC940FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{633A8F88-24A8-4144-89F7-8AD0EFC940FB}.Development|Default.ActiveCfg = Development
+		{633A8F88-24A8-4144-89F7-8AD0EFC940FB}.Development|Default.Build.0 = Development
+		{633A8F88-24A8-4144-89F7-8AD0EFC940FB}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7AF34461-648D-4D95-9962-0D89D7610AA6}
+	EndGlobalSection
+EndGlobal

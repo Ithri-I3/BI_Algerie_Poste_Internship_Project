@@ -1,0 +1,247 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2704359a-cdde-4196-94cf-80da64056313" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Datamart International</ID>
+  <Name>Datamart International</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Datamart International</DataSourceID>
+  <Schema>
+    <xs:schema id="Datamart_x0020_International" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Datamart_x0020_International" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="e900e051-0425-4504-8929-bb3e01bf3ee1">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Dim_Pays" msprop:design-time-name="05cc779f-0638-4ce4-a739-a4f5ed9f97f6" msprop:DbTableName="Dim_Pays" msprop:FriendlyName="Dim_Pays" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_pays" msprop:design-time-name="70ee89b8-1081-4e2a-94f1-e6e6e6f744bb" msprop:DbColumnName="id_pays" msprop:FriendlyName="id_pays">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="nom_pays" msprop:design-time-name="f5c4456e-0ad0-4de9-8701-63cf96226abc" msprop:DbColumnName="nom_pays" msprop:FriendlyName="nom_pays" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_dim_pays" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="d2b9f0fc-192c-4a75-a509-d192d1835747" msprop:DbColumnName="id_dim_pays" msprop:FriendlyName="id_dim_pays" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Temps" msprop:design-time-name="34a95e7e-c9d7-43a4-8e5f-39369059f06d" msprop:DbTableName="Dim_Temps" msprop:FriendlyName="Dim_Temps" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_temps" msprop:design-time-name="94a521da-b851-4b31-9caf-01cc1d5c4df8" msprop:DbColumnName="id_temps" msprop:FriendlyName="id_temps">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="8" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="jour" msprop:design-time-name="6bede04a-b718-4035-a9a6-e94f91de0bd6" msprop:DbColumnName="jour" msprop:FriendlyName="jour" type="xs:int" minOccurs="0" />
+                  <xs:element name="mois" msprop:design-time-name="5a36a65f-5346-4b5c-b8f4-42ae71c6b4c5" msprop:DbColumnName="mois" msprop:FriendlyName="mois" type="xs:int" minOccurs="0" />
+                  <xs:element name="annee" msprop:design-time-name="a92c8503-12fd-4c88-b48f-4b33d7140140" msprop:DbColumnName="annee" msprop:FriendlyName="annee" type="xs:int" minOccurs="0" />
+                  <xs:element name="nom_mois" msprop:design-time-name="fb6bab5a-4e91-42a4-94b0-2f71c5da8d0c" msprop:DbColumnName="nom_mois" msprop:FriendlyName="nom_mois" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_dim_temps" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="889520d0-7660-4787-aa00-240e073d978f" msprop:DbColumnName="id_dim_temps" msprop:FriendlyName="id_dim_temps" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Type_Courrier" msprop:design-time-name="09456a4a-48cb-4e97-97e9-7d06f94ba615" msprop:DbTableName="Dim_Type_Courrier" msprop:FriendlyName="Dim_Type_Courrier" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_type_courrier" msprop:design-time-name="dbb05545-935f-472f-871a-d349cd63e58d" msprop:DbColumnName="id_type_courrier" msprop:FriendlyName="id_type_courrier">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="nom_type_courrier" msprop:design-time-name="a5c97507-4fad-4901-ae40-8114c91f92ff" msprop:DbColumnName="nom_type_courrier" msprop:FriendlyName="nom_type_courrier" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_dim_type_courrier" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="031a3268-2c58-43a4-b4b6-16cdfb89225c" msprop:DbColumnName="id_dim_type_courrier" msprop:FriendlyName="id_dim_type_courrier" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Zone" msprop:design-time-name="2aa625cd-ac74-45dc-886a-49e4ea5eff8f" msprop:DbTableName="Dim_Zone" msprop:FriendlyName="Dim_Zone" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_bureau" msprop:design-time-name="70a5510c-0e12-4c2f-87ca-534611e6d990" msprop:DbColumnName="id_bureau" msprop:FriendlyName="id_bureau" type="xs:short" />
+                  <xs:element name="nom_bureau" msprop:design-time-name="04850e79-d8b1-4975-a647-fc4d57ab9d0e" msprop:DbColumnName="nom_bureau" msprop:FriendlyName="nom_bureau" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_commune" msprop:design-time-name="742f478c-cc06-462b-9ff8-e07fcf74556b" msprop:DbColumnName="id_commune" msprop:FriendlyName="id_commune" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_wilaya" msprop:design-time-name="6c886f42-3b7d-46d2-8d80-1097ceb169c7" msprop:DbColumnName="id_wilaya" msprop:FriendlyName="id_wilaya" type="xs:int" minOccurs="0" />
+                  <xs:element name="nom_wilaya" msprop:design-time-name="c4d3d259-7eab-4d89-9987-f5da47567710" msprop:DbColumnName="nom_wilaya" msprop:FriendlyName="nom_wilaya" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_dim_zone" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="6f0f7553-9011-4774-af80-089af4dab1d2" msprop:DbColumnName="id_dim_zone" msprop:FriendlyName="id_dim_zone" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Fact_Envoi_Postaux" msprop:design-time-name="1c89c71d-4eb4-459e-8145-c6646de9b667" msprop:DbTableName="Fact_Envoi_Postaux" msprop:FriendlyName="Fact_Envoi_Postaux" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_bureau" msprop:design-time-name="31d8065e-2124-4488-88ed-d84c9a1caa33" msprop:DbColumnName="id_bureau" msprop:FriendlyName="id_bureau" type="xs:short" />
+                  <xs:element name="id_pays" msprop:design-time-name="7603c809-a7f8-4308-9341-f7a3b0762243" msprop:DbColumnName="id_pays" msprop:FriendlyName="id_pays">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_type_courrier" msprop:design-time-name="2e4cd2a0-b6af-4bb0-bef4-9bcc8e07c7a8" msprop:DbColumnName="id_type_courrier" msprop:FriendlyName="id_type_courrier">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_temps_eve30" msprop:design-time-name="918e4d52-d2c1-4328-82d0-1aa949ef5d49" msprop:DbColumnName="id_temps_eve30" msprop:FriendlyName="id_temps_eve30">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="8" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_temps_eve32" msprop:design-time-name="9fde6c7c-2e46-4e77-8424-b9f54646de26" msprop:DbColumnName="id_temps_eve32" msprop:FriendlyName="id_temps_eve32">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="8" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_temps_eve37" msprop:design-time-name="1da2dd87-3033-4de2-a1f6-db6b934c14d4" msprop:DbColumnName="id_temps_eve37" msprop:FriendlyName="id_temps_eve37">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="8" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_envoi" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:design-time-name="12662fed-41b0-49d3-a3da-5e3b9c2bf706" msprop:DbColumnName="id_envoi" msprop:FriendlyName="id_envoi" type="xs:string" />
+                  <xs:element name="etat_event30" msprop:design-time-name="13aa903e-2945-40f1-b41e-d2eb0bc75c4a" msprop:DbColumnName="etat_event30" msprop:FriendlyName="etat_event30" type="xs:int" minOccurs="0" />
+                  <xs:element name="etat_event32" msprop:design-time-name="82a2432b-01c1-4b21-a6cf-ba0e423b91b3" msprop:DbColumnName="etat_event32" msprop:FriendlyName="etat_event32" type="xs:int" minOccurs="0" />
+                  <xs:element name="etat_event37" msprop:design-time-name="987fd04e-d6da-44db-a792-e7eefa268487" msprop:DbColumnName="etat_event37" msprop:FriendlyName="etat_event37" type="xs:int" minOccurs="0" />
+                  <xs:element name="delai_distribution" msprop:design-time-name="58a30b3a-e52d-403b-aaf3-d8dfda266fa1" msprop:DbColumnName="delai_distribution" msprop:FriendlyName="delai_distribution" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Pays" />
+          <xs:field xpath="id_pays" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Temps_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Temps" />
+          <xs:field xpath="id_temps" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Type_Courrier_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Type_Courrier" />
+          <xs:field xpath="id_type_courrier" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Zone_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Zone" />
+          <xs:field xpath="id_bureau" />
+        </xs:unique>
+        <xs:unique name="dbo_Fact_Envoi_Postaux_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact_Envoi_Postaux" />
+          <xs:field xpath="id_bureau" />
+          <xs:field xpath="id_pays" />
+          <xs:field xpath="id_type_courrier" />
+          <xs:field xpath="id_temps_eve30" />
+          <xs:field xpath="id_temps_eve32" />
+          <xs:field xpath="id_temps_eve37" />
+          <xs:field xpath="id_envoi" />
+        </xs:unique>
+        <xs:keyref name="FK__Fact_Envo__id_ty__2E1BDC42" refer="dbo_Dim_Type_Courrier_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Envoi_Postaux" />
+          <xs:field xpath="id_type_courrier" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_Envo__id_te__2F10007B" refer="dbo_Dim_Temps_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Envoi_Postaux" />
+          <xs:field xpath="id_temps_eve30" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_Envo__id_pa__2D27B809" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Envoi_Postaux" />
+          <xs:field xpath="id_pays" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_Envo__id_te__30F848ED" refer="dbo_Dim_Temps_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Envoi_Postaux" />
+          <xs:field xpath="id_temps_eve37" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_Envo__id_bu__2C3393D0" refer="dbo_Dim_Zone_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Envoi_Postaux" />
+          <xs:field xpath="id_bureau" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_Envo__id_te__300424B4" refer="dbo_Dim_Temps_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Envoi_Postaux" />
+          <xs:field xpath="id_temps_eve32" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Datamart_x0020_International xmlns="" />
+  </Schema>
+</DataSourceView>
